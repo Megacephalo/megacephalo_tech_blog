@@ -22,7 +22,7 @@ title: Megacephalo's Tech corner
 email: charly.charlongo@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Thank you and gload that you found my tech blog. Wish you enjoy reading my posts and more importantly find something useful or inpirational in my words. Cheers and keep up the good work.
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "megacephalo_tech_blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  Megacephalo
