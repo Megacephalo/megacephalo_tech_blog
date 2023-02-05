@@ -29,7 +29,12 @@ github_username:  Megacephalo
 
 # Build settings
 # theme: minima
-theme: jekyll-theme-hydejack
+
+# The following line is used locally for testing
+# theme: jekyll-theme-hydejack
+
+# A quick fix for the remote repo to properly render the website
+remote_theme: hydecorp/hydejack@v9
 
 plugins:
   - jekyll-feed
