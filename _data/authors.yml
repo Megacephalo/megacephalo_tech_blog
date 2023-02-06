@@ -2,21 +2,17 @@
 # Must be the same as `author` in `_config.yml`.
 # Change `author1` to your shortname.
 author1:
-  name:              <firstname> <lastname>
-  email:             <mail@domain.tld>
+  name:              Cha-Lin (Charly) Huang
+  email:             charly.charlongo@gmail.com
 
   # Used at the bottom of each page and at the top of the `about` layout
   # Markdown enabled, can use multiple paragraphs (enabled by `|`)
   about:             |
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    
-    Open `_data/authors.yml` to edit this text.
+    My name is Charly Huang and I am a software engineer interested in autonomous navigation related algorithms and software development. Since I was little I was fascinated by self-driving robots. And this passion has always motivated me to pursue degrees and careers in related fields. As of today, there are still a great number of issues in the autonomous driving realm waiting to be overcome in order to make automated vehicles safe and reliable. To this end,I want to contribute head-on and hands-on to make autonomous driving a true reality in the near future. I love to solve problems creatively from the big picture all the way down to the details. I take pride in creating beautiful designs and implementing them that not only bring solutions, but also boost maintainability and scalability. I know that every step in crafting the product comes with great responsibility but one inch closer to fulfilling the mission. 
 
   # This photo will be used in the about section
   picture:
-    path:            https://via.placeholder.com/128x128
+    path:            /assets/img/auto_portrait_256px.png
     # srcset is optional, but can be used to provide higher res versions for retina displays
     srcset:
       1x:            https://via.placeholder.com/128x128
@@ -26,14 +22,15 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         <username>
-    github:          <username>
-    # email:           <mail@domain.tld>
+    # twitter:         <username>
+    github:           https://github.com/Megacephalo
+    # email:            charly.charlongo@gmail.com
+    linkedin:         https://www.linkedin.com/in/charlyhuang/
     # rss:             https://<url>/feed.xml
     # facebook:        <username>
     # google:          <number>
     # vk:              <username>
-    # youtube:         <string_string_string>
+    youtube:          https://www.youtube.com/channel/UCwI_TXwnzO0ChxOr5WPCDpA
     # vimeo:           <username>
     # vine:            <username>
     # spotify:         <user>/<number>
