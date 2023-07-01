@@ -25,10 +25,10 @@ title:                 Megacephalo's tech blog
 # A short description (~150 chars) of the page used for the meta description tag.
 # Can use markdown, but no more than one paragraph (enforced by `>`)
 description:           >
-  Hopefully you can find something useful or some fun in this blog. Either way feel fee to reach out.
+  My little blog to share information on how to build a great robotics project from the ground up.
 
 # A shorter description for the sidebar.
-tagline:               Cogito, Ergo sum.
+tagline:               My little blog to share information on how to build a great robotics project from the ground up.
 
 # A list of keywords for your blog
 keywords:              []
@@ -36,7 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/600px-Sextant.png
+logo:                  /assets/img/logo.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -45,19 +45,19 @@ author:
   email:               charly.charlongo@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
-  social:
-    github: https://github.com/Megacephalo
-    email: charly.charlongo@gmail.com
-    linkedin: https://www.linkedin.com/in/charlyhuang/
+social:
+  github: https://github.com/Megacephalo
+  email: charly.charlongo@gmail.com
+  linkedin: https://www.linkedin.com/in/charlyhuang/
 
 # Add links to the sidebar.
-# menu:
-#   - title:             Example
-#     url:               /example/
-#   - title:             Documentation
-#     url:               /docs/
-#   - title:             About
-#     url:               /about/
+menu:
+  - title:             Example
+    url:               /example/
+  - title:             Documentation
+    url:               /docs/
+  - title:             About
+    url:               /about/
 
 # Add links to the footer.
 # Typically you'll want to link to your cookie- or privacy policy (if appliable), etc..
@@ -73,18 +73,18 @@ legal:
 copyright:             © 2021. All rights reserved.
 
 # Format of the permalinks
-permalink:             none
+permalink:             /:categories/:year-:month-:day-:title/
 
 # Pagination configuration (used by the `blog` layout)
 paginate:              10
-paginate_path:         /page-:num/
+paginate_path:         /:num/
 
 
 # Theme
 # ---------------------------------------------------------------------------------------
 
-# theme: jekyll-theme-hydejack
-remote_theme: hydecorp/hydejack@v9
+theme: jekyll-theme-hydejack
+# remote_theme: hydecorp/hydejack@v9
 
 
 # Customizaton
@@ -232,7 +232,7 @@ hydejack:
   # When set to `true`, will not extend the content in the "third column" on large screens.
   # Instead, all content will remains within the center column.
   # Note that this will not affect the Table of Contents, use `no_toc` instead.
-  no_third_column:     true
+  no_third_column:     false
 
   # Set to `true` if you don't like oversized headlines on large screens.
   no_large_headings:   false
@@ -270,7 +270,7 @@ hydejack:
   # Note that dark mode only works in the PRO version of Hydejack.
   dark_mode:
     # Set to `true` to always use the dark theme.
-    always:            true
+    always:            false
 
     # Set to `true` to use the dark theme based on visitors' preference (OS setting).
     dynamic:           true
