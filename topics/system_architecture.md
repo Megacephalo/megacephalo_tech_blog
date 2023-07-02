@@ -8,4 +8,4 @@ sitemap: false
 ---
 # Table of Content
 
-[Plugin Architecture](/2023-07-01-plugin-architecture)
+[Plugin Architecture]({{site.baseurl}}/2023-07-01-plugin-architecture)
