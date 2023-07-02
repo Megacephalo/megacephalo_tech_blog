@@ -38,7 +38,7 @@ The core consists of simply a main function to handle the calling and closing of
 Please refer to Fig 1 for the barebone program's static class diagram.
 
 ![Fig 1. Static class diagram for plugins](https://megacephalo.github.io/megacephalo_tech_blog/assets/img/posts/system_architecture/plugin_archittecture/plugin_architecture_barebone.png)
-**Fig 1. Static class diagram to show the inheritance relationship of plugins and PluginInterface class**
+*Fig 1. Static class diagram to show the inheritance relationship of plugins and PluginInterface class*
 
 It seems like an ordinary inheritance. But how do we impleent this structure to become actual running plugins?
 
