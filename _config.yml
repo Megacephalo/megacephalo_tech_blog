@@ -3,13 +3,13 @@
 
 # Uncomment and set the URL of your site (with protocol, e.g. `https://`)
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# url:                   https://username.github.io
+url:                   https://megacephalo.github.io/megacephalo_tech_blog/
 
 # Uncomment and set the "base URL" of your site.
 # When your site is in a subdirectory, set to `/<name of directory>`,
 # with a leading `/` but no trailing `/`. Use the empty string '' otherwise.
 # NOTE: You don't need to provide this property when hosting on GitHub Pages or Netlify.
-# baseurl:               '/hydejack-starter-kit'
+baseurl:               ''
 
 
 # General settings
@@ -36,7 +36,7 @@ keywords:              []
 # A (square) logo for your site.
 # If provided, it will be shown at the top of the sidebar.
 # It also used by the `jekyll-seo-tag` plugin.
-logo:                  /assets/img/logo.png
+logo:                  /assets/img/600px-Sextant.png
 
 # This should be the same author as first entry in `_data/authors.yml`.
 author:
@@ -45,17 +45,13 @@ author:
   email:               charly.charlongo@gmail.com
   # # Used by `jekyll-seo-tag`:
   # twitter:             <username>
-social:
-  github: https://github.com/Megacephalo
-  email: charly.charlongo@gmail.com
-  linkedin: https://www.linkedin.com/in/charlyhuang/
 
 # Add links to the sidebar.
 menu:
-  - title:             Example
-    url:               /example/
-  - title:             Documentation
-    url:               /docs/
+  - title:             System Architecture
+    url:               /topics/system_architecture/
+  - title:             Rock n ROS
+    url:               /topics/ROS/
   - title:             About
     url:               /about/
 
@@ -70,7 +66,7 @@ legal:
     url:               /CHANGELOG/
 
 # This text will appear in a `<small>` tag in the footer of every page.
-copyright:             © 2021. All rights reserved.
+copyright:             © 2021 - 2023. All rights reserved.
 
 # Format of the permalinks
 permalink:             /:categories/:year-:month-:day-:title/
@@ -316,6 +312,7 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - _drafts
 include:
   - .well-known
   - LICENSE.md
@@ -362,11 +359,12 @@ plugins:
 #   admins:              <id>
 
 # Used on index and about sites
-# social:
-#   name:                <firstname> <lastname>
-#   links:
-#     - https://twitter.com/<username>
-#     - https://github.com/<username>
+social:
+  name:                Charly Huang
+  links:
+    - https://twitter.com/<username>
+    - https://github.com/Megacephalo
+    - https://www.linkedin.com/in/charlyhuang/
 
 
 # Plugin Configs
@@ -400,27 +398,21 @@ sass:
 
 jekyll_compose:
   default_front_matter:
-    drafts:
-      layout: post
-      description: > 
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
-    posts:
-      layout: post
-      description: > 
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
-    projects:
-      layout: project
-      description: > 
-        A short ~160 character description of your post for search engines,
-        social media previews, etc.
-      image:
-        path: /assets/img/sidebar-bg.jpg
-      links:
-        - title: Project Link
-          url: https://example.com
+#     drafts:
+#       layout: post
+#       description: > 
+#         A short ~160 character description of your post for search engines,
+#         social media previews, etc.
+#       image:
+#         path: /assets/img/sidebar-bg.jpg
+    # posts:x```g
+#     projects:
+#       layout: project
+#       description: > 
+#         A short ~160 character description of your post for search engines,
+#         social media previews, etc.
+#       image:
+        # path: /assets/img/sidebar-bg.jpg
+#       links:
+#         - title: Project Link
+#           url: https://example.com
