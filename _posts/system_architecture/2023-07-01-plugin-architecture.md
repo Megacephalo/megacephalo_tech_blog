@@ -37,7 +37,8 @@ The core consists of simply a main function to handle the calling and closing of
 
 Please refer to Fig 1 for the barebone program's static class diagram.
 
-![](/assets/img/posts/system_architecture/plugin_archittecture/plugin_architecture_barebone.png)
+![Fig 1. Static class diagram for plugins](https://megacephalo.github.io/megacephalo_tech_blog/assets/img/posts/system_architecture/plugin_archittecture/plugin_architecture_barebone.png)
+**Fig 1. Static class diagram to show the inheritance relationship of plugins and PluginInterface class**
 
 It seems like an ordinary inheritance. But how do we impleent this structure to become actual running plugins?
 
@@ -47,8 +48,7 @@ First, let work on our plugin base class and the related function:
 
 ### Plugin base class
 
-| plugin_interface.h |
-|--------------------|
+**plugin_interface.h**
 ```C++
 #ifndef _PLUGIN_INTERFACE_H_
 #define _PLUGIN_INTERFACE_H_
@@ -85,6 +85,7 @@ I will only showcase the implementation of a single plugin, but the other ones s
 
 First, let's write up our header file.
 
+**include/plugin_1/plugin_1.h**
 ```C++
 #ifndef _PLUGIN_1_H_
 #define _PLUGIN_1_H_
@@ -112,6 +113,8 @@ Usual stuff, but note the lines within the extern "C" braces. These lines actual
 ### The core
 
 I will show one way of calling the plugins to run in their separate threads. Without calling the threads, you will expect one plugin only runs after another finishes, i.e. in sequential order.
+
+**application/main.cpp**
 
 ```C++
 #include <iostream>
