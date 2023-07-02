@@ -8,4 +8,4 @@ sitemap: false
 ---
 # Table of Content
 
-[Plugin Architecture]({{site.baseurl}}/2023-07-01-plugin-architecture)
+[Plugin Architecture](https://megacephalo.github.io/megacephalo_tech_blog/2023-07-01-plugin-architecture/)
