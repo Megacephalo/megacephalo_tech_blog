@@ -4,6 +4,12 @@ title: How Plugin Architecture works?
 description: >
   How does Plugin Architecture works? How can I create my own plugins or mods?
 sitemap: false
+image:
+    path: https://megacephalo.github.io/megacephalo_tech_blog/assets/img/posts/system_architecture/plugin_archittecture/pexels-karolina-grabowska-6720x4480.jpg
+    secret:
+        1x: https://megacephalo.github.io/megacephalo_tech_blog/assets/img/posts/system_architecture/plugin_archittecture/pexels-karolina-grabowska-640x427.jpg
+        2x: https://megacephalo.github.io/megacephalo_tech_blog/assets/img/posts/system_architecture/plugin_archittecture/pexels-karolina-grabowska-1280x853.jpg
+        3x: https://megacephalo.github.io/megacephalo_tech_blog/assets/img/posts/system_architecture/plugin_archittecture/pexels-karolina-grabowska-1920x1280.jpg
 hide_last_modified: true
 ---
 
