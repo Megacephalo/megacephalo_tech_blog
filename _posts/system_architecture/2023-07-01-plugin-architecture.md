@@ -14,7 +14,7 @@ image:
 hide_last_modified: true
 ---
 
-__You can also read this article in [Traditional Chinese](https://megacephalo.github.io/megacephalo_tech_blog/2023-07-04-外掛程式架構是怎麼運作的？)__
+__You can also read this article in [Traditional Chinese](https://megacephalo.github.io/megacephalo_tech_blog/2023-07-04-外掛程式架構是怎麼運作的)__
 
 Have you ever wonder how the mods are developed and added into a videogame? Have you also wonder why there are so many propietary as well as open-source softwre that allows their users to add or remove plugins whenever they pleased? I also raised the same questions. Fortunately, I got my chance to learn more by implementing a point cloud processing pipeline that I want to design it in a way that each step of the point cloud processing can be treated as its own plugins. 
 In fact, some of the popular software are design this way, consisting of a core and the plugins.
