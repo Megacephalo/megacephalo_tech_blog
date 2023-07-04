@@ -14,6 +14,8 @@ image:
 hide_last_modified: true
 ---
 
+__You can also read this article in [Traditional Chinese](https://megacephalo.github.io/megacephalo_tech_blog/2023-07-04-外掛程式架構是怎麼運作的？)__
+
 Have you ever wonder how the mods are developed and added into a videogame? Have you also wonder why there are so many propietary as well as open-source softwre that allows their users to add or remove plugins whenever they pleased? I also raised the same questions. Fortunately, I got my chance to learn more by implementing a point cloud processing pipeline that I want to design it in a way that each step of the point cloud processing can be treated as its own plugins. 
 In fact, some of the popular software are design this way, consisting of a core and the plugins.
 
@@ -54,7 +56,7 @@ First, let work on our plugin base class and the related function:
 
 ### Plugin base class
 
-**plugin_interface.h**
+**include/plugin_interface.h**
 ```C++
 #ifndef _PLUGIN_INTERFACE_H_
 #define _PLUGIN_INTERFACE_H_
@@ -239,9 +241,9 @@ The steps are as follows,
 ```C++
 void* handle = dlopen(pluginLib.c_str(), RTLD_LAZY);
 ```
+Don't forget to include `<dlfcn.h>` to call in the `dlopen()` function!
 
-2. Create the function pointer of the plugin class. Note, at this point you are still one step behind getting the actual plugin instance. This step is done using the line:
-3. 
+1. Create the function pointer of the plugin class. Note, at this point you are still one step behind getting the actual plugin instance. This step is done using the line:
 ```C++
 createPlugin_t pluginFunc = (createPlugin_t) dlsym(handle, "createPlugin");
 ```
@@ -255,7 +257,7 @@ extern "C" {
 ```
 Now it starts to make more sense.
 
-4. Create the actual plugin pointer instance:
+1. Create the actual plugin pointer instance:
 
 ```C++
 return pluginFunc();
@@ -302,8 +304,7 @@ The file structure looks kind of formidable but the underlying idea is to have e
 
 First, let take a look at the project root CMakeLists.
 
-| CMakeLists.txt |
-|----------------|
+**CMakeLists.txt**
 ```cmake
 cmake_minimum_required(VERSION 3.2)
 
@@ -374,7 +375,7 @@ Speaking of releasing memory, there is clearly an issue in this code. Do you rem
 
 Moreover, by manipulating the dynamic memory, profiling the memory usage with tools such as **Valgrind** may sometimes yield an existence of memory leakage even though the resource might long being released. With this being said, we have not done dclose() yet so this is not the case.
 
-In the same fasion, despite using smart pointer to wrapp the function pointer returned from `dlsym()`, it is still subject to potential memory leakage. To solve this issue would require uninstinctive solution to either mitigate, solve, or get around the issue. I personally find either way hideous.
+In the same fasion, despite using smart pointer to wrapp the function pointer returned from `dlsym()`, it is still subject to potential memory leakage. To solve this issue would require unintuitive solution to either mitigate, solve, or get around the issue. I personally find either way hideous.
 
 Anyways, this is the fun of programming I guess...I hope this article helps you should you ever want to implement a plugin architecture of your own. Keep calm and keep coding. Peace!
 
