@@ -14,22 +14,21 @@ image:
 hide_last_modified: true
 ---
 
-Have you ever wonder how the mods are developed and added into a videogame? Have you also wonder why there are so many propietary as well as open-source softwre that allows their users to add or remove plugins whenever they pleased? I also raised the same questions. Fortunately, I implemented a point cloud processing pipeline that I want to design it in a way that each step of the point cloud processing can be seen as its own plugins. 
-In fact, some of the popular software are design this way, consisting of a core and the plugins. Or in the case of Eclipse in which every feature is a plugin. 
-
+Have you ever wonder how the mods are developed and added into a videogame? Have you also wonder why there are so many propietary as well as open-source softwre that allows their users to add or remove plugins whenever they pleased? I also raised the same questions. Fortunately, I got my chance to learn more by implementing a point cloud processing pipeline that I want to design it in a way that each step of the point cloud processing can be treated as its own plugins. 
+In fact, some of the popular software are design this way, consisting of a core and the plugins.
 
 # The up-side of plugin architecture
 
-- Flexible on development
+- Flexibility on development
 - Flexible on usage
 - Easily scalable
-- Modular to extend the functionalities
+- Make things modular
 
 # The downside of plugin architecture
 
 - Will make your softwre slightly more complex
-- Each plugin runs on its thread as a run() or execute() method.
-- Once there is a change in the core, plugins would no longer work. See an actual example of [Subnautica Live At Large Udate](https://steamcommunity.com/app/264710/discussions/0/3730700312409631960/)
+- Each plugin runs on its thread as a run() or execute() method. Actually, I think this depends on how you want to express the features of your program.
+- Changes in the core might break the plugins. See an actual example: [Subnautica Live At Large Udate Broken mods after the update.](https://steamcommunity.com/app/264710/discussions/0/3730700312409631960/)
 
 # Let's get our hands dirty
 
